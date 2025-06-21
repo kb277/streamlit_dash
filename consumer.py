@@ -22,7 +22,7 @@ collection = db["aggregated_data"]
 user_interactions = defaultdict(int)
 item_counts = defaultdict(int)
 
-print("🔄 Kafka consumer started... Listening for messages")
+print("Kafka consumer started... Listening for messages")
 
 for message in consumer:
     print("📨 Kafka message received")	
@@ -48,5 +48,5 @@ for message in consumer:
         upsert=True
     )
 
-    print(f"📥 Upserted into MongoDB: {data}")
+    print(f"Upserted into MongoDB: {data}")
 
