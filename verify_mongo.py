@@ -8,7 +8,7 @@ db = client["interaction_db"]
 collection = db["aggregated_data"]
 
 # Fetch and print documents
-print("🔍 Verifying MongoDB contents:")
+print("Verifying MongoDB contents:")
 for doc in collection.find().limit(10):
     print(doc)
 
