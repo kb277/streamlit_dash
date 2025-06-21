@@ -25,7 +25,7 @@ item_counts = defaultdict(int)
 print("Kafka consumer started... Listening for messages")
 
 for message in consumer:
-    print("📨 Kafka message received")	
+    print("Kafka message received")	
     data = message.value
     user_id = data["user_id"]
     item_id = data["item_id"]
